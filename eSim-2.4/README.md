@@ -10,7 +10,7 @@ nghdl/install-nghdl.sh
 Only the first two bugs were successfully fixed and verified due to time/resource constraints.
 
 🐞 Bugs/Issues Reported and Fixed
-✅ 1. python3-distutils Not Found
+✅ 1. python3-distutils Not Found 
 Issue: python3-distutils package is deprecated and not available in Ubuntu 24.04.
 
 Impact: The installation script fails during the Python environment setup.
