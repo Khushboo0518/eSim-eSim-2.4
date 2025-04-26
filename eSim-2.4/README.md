@@ -5,7 +5,7 @@ This repository documents the initial debugging and modification efforts to get 
 
 Focus was given to fixing critical installation issues found in:
 install-eSim.sh
-nghdl/install-nghdl.sh
+nghdl/install-nghdl.sh 
 
 Only the first two bugs were successfully fixed and verified due to time/resource constraints.
 
