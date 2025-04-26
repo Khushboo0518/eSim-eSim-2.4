@@ -1,11 +1,10 @@
 🛠️ Bug Fixes and Installation Improvements for eSim on Ubuntu 24.04
+
 📋 Overview
 This repository documents the initial debugging and modification efforts to get eSim running on Ubuntu 24.04, which is not officially supported due to outdated dependencies and deprecated packages.
 
 Focus was given to fixing critical installation issues found in:
-
 install-eSim.sh
-
 nghdl/install-nghdl.sh
 
 Only the first two bugs were successfully fixed and verified due to time/resource constraints.
@@ -17,9 +16,7 @@ Issue: python3-distutils package is deprecated and not available in Ubuntu 24.04
 Impact: The installation script fails during the Python environment setup.
 
 Fix:
-
 Installed setuptools, which is the modern replacement for distutils.
-
 Modified install-eSim.sh to use setuptools instead.
 
 📈 Difficulty: Moderate
@@ -30,9 +27,7 @@ Modified install-eSim.sh to use setuptools instead.
 Issue: pip3 dependencies (like watchdog, hdlparse, etc.) failed to install due to permission or compatibility issues.
 
 Fix:
-
 Created a Python virtual environment.
-
 Activated the environment inside install-eSim.sh before running pip commands.
 
 📈 Difficulty: Moderate
